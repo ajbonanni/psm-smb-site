@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cash Clarity & CFO Strategy — Complimentary Consult | PSM Advisory Services</title>
+  <meta name="description" content="Complimentary 30-minute CFO strategy consult for SMB leaders in NC, TN & SC. Get real-time cash/runway visibility, faster month-end, and investor-ready reporting—without derailing operations." />
+  <meta property="og:title" content="Complimentary CFO Strategy Consult — PSM Advisory Services" />
+  <meta property="og:description" content="Book a 30-minute consult to fix cash visibility, reporting speed, and control gaps." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#003B5C;        /* hero gradient start (Gartner Blue) */
+      --bg2:#0B2A3C;       /* hero gradient end (deep blue) */
+      --ink:#0B132B;       /* body text */
+      --ink-2:#334155;     /* secondary text */
+      --brand:#0B8F8E;     /* CTA/accents (dark teal) */
+      --brand-2:#0891B2;   /* CTA hover (cyan) */
+      --paper:#FFFFFF;
+      --gblue:#003B5C;     /* headings in cards */
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background:#f8fafc;
+      line-height:1.55;
+    }
+    a{color:var(--brand-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* ---------- HERO ---------- */
+    header{
+      background:linear-gradient(120deg,var(--bg) 0%, var(--bg2) 100%);
+      color:#fff;
+      padding:28px 0 34px;
+      position:relative; overflow:hidden;
+    }
+    header .brand{
+      display:flex; align-items:center; gap:14px;
+      font-weight:700; letter-spacing:.2px; margin-bottom:12px;
+      font-size:1.20rem;
+    }
+    header .brand .logo{
+      width:46px;height:46px;border-radius:999px;
+      background:#ffffff14;border:2px solid #ffffff55;
+      display:grid;place-items:center;font-size:24px
+    }
+    .eyebrow{
+      margin:8px 0 34px; font-weight:600; color:#fff; opacity:.95;
+      font-size:1.12rem;
+    }
+    header h1{margin:6px 0 14px; font-size:clamp(26px,4vw,40px); line-height:1.15}
+    header p.sub{margin:0 0 32px; opacity:.95; max-width:800px}
+
+    .cta-buttons{display:flex;gap:16px;flex-wrap:wrap; margin:6px 0 12px}
+    .btn{
+      display:inline-block;
+      background:var(--brand);
+      color:#fff;
+      border-radius:999px;
+      padding:12px 18px;
+      font-weight:700;
+      border:2px solid var(--brand);
+      box-shadow:0 10px 24px rgba(0,0,0,.12);
+      transition:transform .06s ease, box-shadow .2s ease, background .15s ease;
+    }
+    .btn:hover{ transform:translateY(-1px); background:var(--brand-2); }
+    .btn.alt{ background:transparent; color:#fff; border-color:#ffffff55; }
+    .btn:focus-visible{ outline:3px solid #e2f6ff; outline-offset:3px; }
+
+    .cta-micro{ color:#e6fffb; margin:6px 0 0; font-size:14px }
+
+    /* Inline contact rail */
+    .contact-inline{ margin: 6px 0 0; font-size: 14px; color: #e6fffb; }
+    .contact-inline a{ color:#ffffff; text-decoration:underline; }
+    .contact-inline a:hover{ text-decoration:none; }
+
+    .proof-banner{
+      background:#ecfeff; border:1px solid #a5f3fc; border-radius:14px;
+      padding:14px 16px; color:#0f172a; box-shadow:0 6px 14px rgba(2,8,23,.08);
+      margin-top:24px; margin-bottom:8px;
+    }
+    .proof-banner strong{ color:#0f172a; }
+
+    /* Case Study List (Option 2) */
+    .cred-cases{
+      background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:12px 16px;
+      box-shadow:0 6px 14px rgba(2,8,23,.06); margin-top:12px; color:#0b132b;
+    }
+    .cred-cases .row{
+      display:grid; grid-template-columns: 1.1fr 1.9fr; gap:14px;
+      padding:10px 0; align-items:center;
+    }
+    .cred-cases .row + .row{ border-top:1px dashed #e5e7eb; }
+    .cred-cases .who{ font-weight:700; color:var(--gblue); }
+    .cred-cases .what{ color:#0b132b; }
+    @media (max-width:700px){ .cred-cases .row{ grid-template-columns:1fr; gap:6px; } }
+
+    /* ---------- MAIN ---------- */
+    .section{padding:48px 0}
+    main .section:first-of-type{ padding-top:36px; }
+
+    .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{
+      background:#fff;border:1px solid #e5e7eb;border-radius:16px;
+      padding:20px; box-shadow:0 6px 14px rgba(2,8,23,.04)
+    }
+    .card h3{margin:0 0 8px; color:var(--gblue);}
+    .bullets{margin:6px 0 0 18px; padding-left:6px; color:#0f172a}
+    .bullets li{margin:10px 0; line-height:1.45}
+    .bullets li strong{font-weight:700}
+
+    /* Trust bar (two-line, centered, bold; no italics) */
+    .trust-bar{
+      text-align:center; font-weight:700; color:var(--gblue);
+      font-size: clamp(15px, 1.7vw, 23px);
+      margin: 40px 0; letter-spacing:.2px; line-height:1.25;
+    }
+
+    /* Booking card */
+    .cal{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;box-shadow:0 6px 14px rgba(2,8,23,.04)}
+    #book.cal{ width:100%; margin:0; }
+    #book.cal .calendly-inline-widget{ width:100% !important; min-width:100% !important; }
+    @media (min-width: 900px){ #book.cal .calendly-inline-widget{ height:640px !important; } }
+
+    /* Expect + Bio two-column */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width: 900px){ .grid-2{grid-template-columns:1fr} }
+    .bio .row{ display:flex; gap:12px; align-items:center; }
+    .bio .avatar{
+      width:48px; height:48px; border-radius:999px;
+      display:grid; place-items:center; font-weight:800; color:#fff;
+      background:linear-gradient(135deg, var(--bg), var(--bg2));
+      border: 2px solid #ffffff;
+      box-shadow:0 4px 10px rgba(2,8,23,.12);
+    }
+    .bio .title{ margin:0; font-weight:700; }
+    .bio .small{ color:#475569; }
+
+    footer{padding:28px 0;color:#475569}
+    .small{color:#64748b;font-size:14px}
+
+    /* Responsive tweaks */
+    @media (max-width: 640px){
+      header{ padding-top:22px; }
+      .eyebrow{ font-size:1.02rem; margin-bottom:28px; }
+      .pillars{grid-template-columns:1fr}
+    }
+  
+    
+    @media (max-width:480px){
+      .bio .headshot{ width:56px; height:56px; }
+    }
+
+  
+  
+  @media (max-width:480px){
+    .bio .headshot{ width:44px; height:44px; flex-basis:44px; }
+  }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand" aria-label="PSM Advisory Services • Execution That Delivers">
+        <div class="logo" aria-label="PSM Advisory Services logo">➤</div>
+        <div>PSM Advisory Services • <span style="opacity:.9">Execution That Delivers</span></div>
+      </div>
+
+      <p class="eyebrow">CFO support — onsite or remote — to improve cash clarity, strengthen controls, and accelerate execution.</p>
+
+      <h1>Accelerate Results. Control Risk. Reclaim Focus.</h1>
+      <p class="sub">
+        Complimentary 30-minute consultation for SMB leaders. We install real-time cash/runway visibility,
+        automated risk alerts, faster month-end, and investor-ready reporting — without derailing operations.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="#book" class="btn" aria-label="Book a complimentary 30-minute consultation">Book your complimentary consult</a>
+        <a href="./assets/PSM-SMB-CFO-Services-Flyer-2025.pdf" class="btn alt" download aria-label="Download the CFO services flyer as a PDF">Download the flyer (PDF)</a>
+      </div>
+      <p class="cta-micro" aria-hidden="true">No cost. No obligation. 30 minutes.</p>
+
+      <p class="contact-inline" aria-label="Alternate contact options">
+        Prefer to talk?
+        <a href="tel:+15858999094">Call (585) 899-9094</a> •
+        <a href="mailto:info@pmsoln.com?subject=30-minute%20Consult%20Request&body=Hi%20Andrew%2C%0A%0AWe%E2%80%99d%20like%20to%20book%20a%2030-minute%20consult.%20Company%3A%20_____%20Top%20issue%3A%20_____%0A%0AThanks!">Email</a> •
+        <a href="https://www.linkedin.com/in/andrewbonanni?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNF5uV892TzC%2BF31Ew1Guuw%3D%3D" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+
+      <div class="proof-banner" aria-label="Proven results">
+        <strong>Proven CFO results — $180M exit (11x EBITDA)</strong> enabled by disciplined cash flow management, $60M+ in M&A driven by strategic planning, and $30M in Series A & B funding supported by scalable governance and analytics.
+      </div>
+
+      <!-- Case Study List (Option 2) -->
+      <div class="cred-cases">
+        <div class="row">
+          <div class="who">PE-backed IT services</div>
+          <div class="what">month-end closed <strong>6 weeks faster</strong></div>
+        </div>
+        <div class="row">
+          <div class="who">Public SaaS</div>
+          <div class="what">investor-ready reporting for <strong>$30M raise</strong></div>
+        </div>
+        <div class="row">
+          <div class="who">Founder-led manufacturer</div>
+          <div class="what">live cash/runway in <strong>30 days</strong></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Services -->
+    <section class="section">
+      <div class="pillars">
+        <div class="card">
+          <h3>Cash Flow Visibility that Drives Action</h3>
+          <ul class="bullets">
+            <li><strong>AI-enabled cash forecasting & dashboards</strong> — know your daily cash position and runway</li>
+            <li><strong>Integrated real-time view</strong> — eliminate reporting delays</li>
+            <li><strong>Automated risk alerts</strong> — avoid costly surprises</li>
+            <li><strong>Optimized cash use</strong> — fund profitable growth opportunities</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Planning Confidence in Any Market</h3>
+          <ul class="bullets">
+            <li><strong>Dynamic modeling</strong> — drive agility through scenario-based planning</li>
+            <li><strong>Investor-ready packages</strong> — secure capital when it counts</li>
+            <li><strong>Stress-tested growth plans</strong> — enable rapid market adaptability</li>
+            <li><strong>Risk-adjusted strategies</strong> — safeguard assets and strengthen margins for sustainable growth</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Growth Without the Growing Pains</h3>
+          <ul class="bullets">
+            <li><strong>Governance frameworks</strong> — strengthen adaptive controls</li>
+            <li><strong>Finance-ops integration</strong> — accelerate company-wide execution</li>
+            <li><strong>Automated reporting</strong> — free up leadership time</li>
+            <li><strong>Embedded insight</strong> — scale your business with precision</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trust-bar"><strong>Trusted by SMB leaders in technology, manufacturing &amp; professional services</strong><br><strong>across PE-backed, public, and founder-led companies.</strong></div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section" style="padding-top:40px">
+      <div id="book" class="cal">
+        <h2 style="margin:6px 8px 12px">Book your complimentary consult</h2>
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/abonanni/complimentary-consultation?hide_gdpr_banner=1"
+             style="min-width:320px;height:700px;"></div>
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+        <p class="small" style="margin-top:10px; text-align:center">
+          Prefer a direct link? <a href="https://calendly.com/abonanni/complimentary-consultation" target="_blank" rel="noopener">Open Calendly in a new tab</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Expectations + Bio -->
+    <section class="section">
+      <div class="grid-2">
+        <div class="card" role="region" aria-label="What to expect">
+          <h3 style="margin-top:0;color:var(--ink)">What to expect</h3>
+          <div class="small">
+            A focused, no-pressure working session to pinpoint cash visibility gaps, reporting delays, and control risks.
+            You’ll leave with prioritized next steps tailored to your business.
+          </div>
+        </div>
+        <div class="card bio" role="region" aria-label="About Andrew">
+          <div class="row"> <div>
+              <p class="title">About Andrew</p>
+              <div class="small">CFO/operator trusted by SMB leaders. Led a $180M exit (11x EBITDA), $60M+ M&amp;A, and $30M in Series A/B.</div>
+              <div class="small">I combine cash clarity, scalable controls, and execution to hit investor-grade targets—without derailing ops.</div>
+              <div class="small" style="margin-top:6px"><a href="https://www.linkedin.com/in/andrewbonanni?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNF5uV892TzC%2BF31Ew1Guuw%3D%3D" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="small">
+        © PSM Advisory Services • Andrew Bonanni, CFO •
+        <a href="tel:+15858999094">(585) 899-9094</a> •
+        <a href="mailto:info@pmsoln.com">info@pmsoln.com</a> •
+        <a href="https://www.linkedin.com/in/andrewbonanni?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNF5uV892TzC%2BF31Ew1Guuw%3D%3D" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
