@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://psm-smb-site.vercel.app/sitemap.xml
