@@ -131,6 +131,8 @@
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     @media (max-width: 900px){ .grid-2{grid-template-columns:1fr} }
     .bio .row{ display:flex; gap:12px; align-items:center; }
+    /* Allow flex child to shrink so text wraps */
+    .bio .row > div { min-width: 0; }
     .bio .avatar{
       width:48px; height:48px; border-radius:999px;
       display:grid; place-items:center; font-weight:800; color:#fff;
@@ -142,7 +144,13 @@
     .bio .small{ color:#475569; }
 
     footer{padding:28px 0;color:#475569}
-    .small{color:#64748b;font-size:14px}
+    .small {
+      color: #64748b;
+      font-size: 14px;
+      white-space: normal;        /* ensures text wraps */
+      word-wrap: break-word;      /* handles long words */
+      overflow-wrap: break-word;  /* modern equivalent */
+    }
 
     /* Responsive tweaks */
     @media (max-width: 640px){
@@ -150,18 +158,12 @@
       .eyebrow{ font-size:1.02rem; margin-bottom:28px; }
       .pillars{grid-template-columns:1fr}
     }
-  
-    
     @media (max-width:480px){
       .bio .headshot{ width:56px; height:56px; }
     }
-
-  
-  
-  @media (max-width:480px){
-    .bio .headshot{ width:44px; height:44px; flex-basis:44px; }
-  }
-
+    @media (max-width:480px){
+      .bio .headshot{ width:44px; height:44px; flex-basis:44px; }
+    }
   </style>
 </head>
 
@@ -183,7 +185,7 @@
 
       <div class="cta-buttons">
         <a href="#book" class="btn" aria-label="Book a complimentary 30-minute consultation">Book your complimentary consult</a>
-        <a href="./assets/PSM-SMB-CFO-Services-Flyer-2025.pdf" class="btn alt" download aria-label="Download the CFO services flyer as a PDF">Download the flyer (PDF)</a>
+        <a href="./assets/CFO Strategy & Growth Leadership.pdf" class="btn alt" download aria-label="Download the CFO strategy & growth Leadership flyer as a PDF">Download the flyer (PDF)</a>
       </div>
       <p class="cta-micro" aria-hidden="true">No cost. No obligation. 30 minutes.</p>
 
@@ -195,21 +197,21 @@
       </p>
 
       <div class="proof-banner" aria-label="Proven results">
-        <strong>Proven CFO results — $180M exit (11x EBITDA)</strong> enabled by disciplined cash flow management, $60M+ in M&A driven by strategic planning, and $30M in Series A & B funding supported by scalable governance and analytics.
+        <strong>Proven CFO results — $180M exit at 11x EBITDA through disciplined cash flow management, $60M+ M&amp;A execution via strategic planning, and $30M in Series A &amp; B funding powered by scalable governance and analytics.</strong>
       </div>
 
       <!-- Case Study List (Option 2) -->
       <div class="cred-cases">
         <div class="row">
-          <div class="who">PE-backed IT services</div>
+          <div class="who">PE-backed technology services</div>
           <div class="what">month-end closed <strong>6 weeks faster</strong></div>
         </div>
         <div class="row">
-          <div class="who">Public SaaS</div>
+          <div class="who">High-growth life sciences manufacturer</div>
           <div class="what">investor-ready reporting for <strong>$30M raise</strong></div>
         </div>
         <div class="row">
-          <div class="who">Founder-led manufacturer</div>
+          <div class="who">Founder-led industrial company</div>
           <div class="what">live cash/runway in <strong>30 days</strong></div>
         </div>
       </div>
@@ -280,10 +282,11 @@
           </div>
         </div>
         <div class="card bio" role="region" aria-label="About Andrew">
-          <div class="row"> <div>
+          <div class="row">
+            <div>
               <p class="title">About Andrew</p>
               <div class="small">CFO/operator trusted by SMB leaders. Led a $180M exit (11x EBITDA), $60M+ M&amp;A, and $30M in Series A/B.</div>
-              <div class="small">I combine cash clarity, scalable controls, and execution to hit investor-grade targets—without derailing ops.</div>
+              <div class="small">Delivers cash clarity, scalable controls, and execution to achieve investor-grade targets without disrupting operations.</div>
               <div class="small" style="margin-top:6px"><a href="https://www.linkedin.com/in/andrewbonanni?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNF5uV892TzC%2BF31Ew1Guuw%3D%3D" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
             </div>
           </div>
