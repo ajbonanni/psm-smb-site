@@ -72,7 +72,82 @@
     .bio .small{color:#475569;}
     footer{padding:28px 0;color:#475569}
     .small{color:#64748b;font-size:14px;white-space:normal;word-wrap:break-word;overflow-wrap:break-word;}
-  </style>
+
+/* ==== BEGIN MOBILE OPTIMIZATIONS ==== */
+
+/* Utility classes to control visibility */
+.only-desktop { display: block; }
+.only-mobile  { display: none;  }
+
+@media (max-width: 900px) {
+  /* Stack the two-column areas and tighten spacing */
+  .grid-2 { grid-template-columns: 1fr; gap: 16px; }
+  header { padding: 22px 0 26px; }
+  header p.sub { max-width: 100%; }
+  .pillars { grid-template-columns: 1fr; gap: 16px; }
+  .cred-cases .row { grid-template-columns: 1fr; gap: 8px; }
+
+  /* Shorter Calendly iframe for tablets */
+  #book.cal .calendly-inline-widget { height: 560px !important; }
+}
+
+@media (max-width: 640px) {
+  /* Full-width buttons for mobile */
+  .cta-buttons { gap: 10px; }
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 18px;
+  }
+
+  /* Adjust headline and proof box */
+  header h1 {
+    font-size: clamp(24px, 6.2vw, 34px);
+    line-height: 1.18;
+  }
+
+  .eyebrow {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .proof-banner {
+    padding: 12px 14px;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  /* Card & text tweaks */
+  .card { padding: 16px; }
+  .small { font-size: 15px; }
+
+  /* Bio section alignment */
+  .bio .row { align-items: flex-start; }
+  .bio .title { font-size: 18px; }
+
+  /* Trust bar adjustments */
+  .trust-bar {
+    font-size: clamp(14px, 3.8vw, 18px);
+    margin: 28px 0;
+  }
+
+  /* Shorter Calendly iframe for phones */
+  #book.cal .calendly-inline-widget { height: 520px !important; }
+
+  /* Swap visibility classes */
+  .only-desktop { display: none; }
+  .only-mobile { display: block; }
+}
+
+@media (max-width: 400px) {
+  .wrap { padding: 18px; }
+  header .brand { font-size: 1rem; gap: 10px; }
+  .eyebrow { font-size: .98rem; }
+  .proof-banner { font-size: 14px; }
+}
+/* ==== END MOBILE OPTIMIZATIONS ==== */
+  
+</style>
 </head>
 
 <body>
